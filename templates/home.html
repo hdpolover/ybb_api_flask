@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="{{ url_for('static', filename='img/ybb_logo.png') }}">
+
+    <title>YBB</title>
+
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.theme.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+
+    <script src="{{ url_for('static', filename='js/modernizr.custom.js') }}"></script>
+
+</head>
+
+<body>
+
+    <a href="#header" id="back-to-top" class="top"><i class="fa fa-chevron-up"></i></a>
+    <!-- HHHHHHHHHHHHHHHHHH        Preloader          HHHHHHHHHHHHHHHH -->
+    <!-- <div id="preloader"></div> -->
+    <!-- HHHHHHHHHHHHHHHHHH        Header          HHHHHHHHHHHHHHHH -->
+    <section id="header" class="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="navigation" id="navigation-scroll">
+                        <div class="row">
+                            <div class="col-md-11 col-xs-10">
+                                <a href="{{ url_for('home') }}"><span id="logo"><strong class="strong">YBB</strong></span></a>
+                            </div>
+                        </div><!-- /.row -->
+                    </div><!-- /.navigation -->
+                </div><!--/.container-->
+            </div><!--/.top-bar-->
+
+        <div class="container">
+            <div class="starting">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="{{ url_for('static', filename='img/ybb.png') }}" alt="LUCY" class="wow flipInY animated animated">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="banner-text">
+                             <h2 class="animation-box wow bounceIn animated"><strong class="strong">One touch for</strong><br>
+                            all needs</h2>
+                            <p>
+                                Youth Break the Boundaries (YBB) is a foundation that focuses on all instruments regarding the development and empowerment of youth to prepare excellent future leaders by promoting strong identity and character and also providing noble values ​​for the youth
+                            </p>
+                            <a href="https://play.google.com/store/apps/details?id=com.hdpolover.ybbproject" class="btn btn-download wow animated fadeInLeft">
+                            <i class="fa fa-android pull-left"></i>
+                            <strong>Get it on</strong>
+                            <br/>Google Play </a>
+                            <a href="https://apps.apple.com/us/app/youth-break-the-boundaries/id1554311405" class="btn btn-download wow animated fadeInRight">
+                            <i class="fa fa-apple pull-left"></i>
+                            <strong>Get it on</strong>
+                            <br/>App store </a>   
+                        </div> <!-- /.banner-text -->
+                    </div>
+                </div>
+            </div>
+            <!-- /.starting -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /#header -->
+
+    <script src="{{ url_for('static', filename='js/jquery-1.11.2.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/wow.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/owl-carousel.js') }}"></script>
+    <!--<script src="js/jquery.ajaxchimp.min.js"></script>-->
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/classie.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+        $(document).ready(function(){
+            $(".hideit").click(function(){
+                $(".overlay").hide();
+            });
+            $("#trigger-overlay").click(function(){
+                $(".overlay").show();
+            });
+        });
+    </script>
+</body>
+</html>
